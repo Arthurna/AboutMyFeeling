@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Year Without You</title>
+    <!-- <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=t84KnxAapRg#gsc.tab=0/" frameborder="0" allowfullscreen></iframe> -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+
+            background-color: #000000;
+        }
+
+        .box {
+            position: relative;
+        }
+
+        video {
+            margin-top: 1px;
+            margin-left: 1px;
+            margin-bottom: 1px;
+            margin-right: 1px;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        h1 {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <section class="box">   
+        <video width="1500" height="450" id="myVideo" src="Right1.mp4" loop></video>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var myVideo = document.getElementById('myVideo');
+                myVideo.addEventListener('loadeddata', function () {
+                    setTimeout(function () {
+                        myVideo.autoplay = true;
+                    }, 0); // 
+                });
+            });
+        </script>
+    </section> 
+</body>
+</html>
